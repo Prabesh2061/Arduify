@@ -1,14 +1,14 @@
-# Ardify – Arduino LED Control with Potentiometer
+# Ardify – Arduino Music Player with Lighting
 
 [![Tinkercad Simulation](https://img.shields.io/badge/Tinkercad-Simulate-blue)](https://www.tinkercad.com/things/97JWZVqkdDX-arduify)
 [![GitHub License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-A simple Arduino project simulating LED brightness control using a potentiometer, built and tested in Tinkercad.
+A simple Arduino project simulating Music player using a piezo, built and tested in Tinkercad.
 
 ---
 
 ## 📌 Overview
-**Ardify** is an Arduino-based project that demonstrates analog input and output by controlling an LED's brightness with a potentiometer. This project is ideal for beginners learning about sensors, actuators, and basic Arduino programming.
+**Ardify** is an Arduino-based music player that uses a piezo buzzer to play tunes, an LCD screen to display song names, and LED lighting for dynamic visual effects. This project is ideal for learning about Arduino, sensors, and multimedia integration.
 
 **Tinkercad Project:** [Open in Tinkercad](https://www.tinkercad.com/things/97JWZVqkdDX-arduify)
 
@@ -19,9 +19,11 @@ A simple Arduino project simulating LED brightness control using a potentiometer
 |-------------------|----------|---------------------------|
 | Arduino Uno       | 1        | Microcontroller board     |
 | Breadboard        | 1        | For prototyping           |
-| LED               | 1        | Output indicator          |
-| 220Ω Resistor     | 1        | Current limiting          |
-| Potentiometer     | 1        | Analog input              |
+| Piezo Buzzer      | 1        | For music playback        |
+| LED               | 12       | Lighting effects          |
+| 220Ω Resistor     | 14       | Current limiting          |
+| Push Buttons      | 1        | Song navigation           |
+| LCD Display 16x2  | 1        | Display songs             |
 | Jumper Wires      | Several  | Connections               |
 
 ---
@@ -32,8 +34,8 @@ A simple Arduino project simulating LED brightness control using a potentiometer
 ---
 
 ## 💡 How It Works
-1. **Input:** The Arduino reads the analog voltage from the potentiometer (0-1023).
-2. **Processing:** The value is mapped to a PWM output range (0-255).
-3. **Output:** The LED brightness changes proportionally to the potentiometer position.
+1. **Song Selection:** Use buttons to cycle through songs displayed on the LCD.
+2. **Music Playback:** The piezo buzzer plays the selected melody.
+3. **Lighting Effects:** LEDs flash or fade in sync with the music.
 
 ---
