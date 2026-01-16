@@ -27,8 +27,7 @@ A simple Arduino project simulating LED brightness control using a potentiometer
 ---
 
 ## 📐 Circuit Diagram
-![Circuit Schematic](circuit.png)
-*(Replace with your exported Tinkercad schematic or simulation screenshot.)*
+![Circuit Schematic](circuit/Arduify.png)
 
 ---
 
@@ -38,20 +37,3 @@ A simple Arduino project simulating LED brightness control using a potentiometer
 3. **Output:** The LED brightness changes proportionally to the potentiometer position.
 
 ---
-
-## 📝 Code
-```cpp
-// Ardify - LED Brightness Control with Potentiometer
-
-const int POT_PIN = A0;    // Potentiometer connected to analog pin A0
-const int LED_PIN = 9;     // LED connected to digital pin 9 (PWM)
-
-void setup() {
-  pinMode(LED_PIN, OUTPUT);
-}
-
-void loop() {
-  int sensorValue = analogRead(POT_PIN);          // Read potentiometer value
-  int outputValue = map(sensorValue, 0, 1023, 0, 255); // Map to PWM range
-  analogWrite(LED_PIN, outputValue);              // Set LED brightness
-}
