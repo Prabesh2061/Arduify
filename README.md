@@ -7,6 +7,9 @@ A simple Arduino project simulating Music player using a piezo, built and tested
 
 ---
 
+## 📖 Documentation
+- [Setup Guide](docs/setup_guide.md) – Step-by-step instructions for simulation and hardware setup.
+
 ## 📌 Overview
 **Ardify** is an Arduino-based music player that uses a piezo buzzer to play tunes, an LCD screen to display song names, and LED lighting for dynamic visual effects. This project is ideal for learning about Arduino, sensors, and multimedia integration.
 
@@ -39,3 +42,15 @@ A simple Arduino project simulating Music player using a piezo, built and tested
 3. **Lighting Effects:** LEDs flash or fade in sync with the music.
 
 ---
+
+## 🚀 Simulation & Usage
+
+### In Tinkercad:
+1. Open the [Tinkercad project](https://www.tinkercad.com/things/97JWZVqkdDX-arduify).
+2. Click "Start Simulation."
+3. Use the buttons to select and play songs.
+
+### On Hardware:
+1. Assemble the circuit as shown in the schematic.
+2. Upload the code to your Arduino.
+3. Use the buttons to navigate and play songs.

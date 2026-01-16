@@ -1,9 +1,3 @@
-
----
-
-## **docs/setup_guide.md**
-
-```markdown
 # Ardify – Setup Guide
 
 This guide will help you set up the Ardify Music Player with Lighting in Tinkercad and on physical hardware.
